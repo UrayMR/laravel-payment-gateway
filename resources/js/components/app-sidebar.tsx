@@ -13,6 +13,7 @@ import {
     SidebarMenuItem,
 } from '@/components/ui/sidebar';
 import { dashboard } from '@/routes';
+import payments from '@/routes/payments';
 import type { NavItem } from '@/types';
 import AppLogo from './app-logo';
 
@@ -21,6 +22,11 @@ const mainNavItems: NavItem[] = [
         title: 'Dashboard',
         href: dashboard(),
         icon: LayoutGrid,
+    },
+    {
+        title: 'Payments',
+        href: payments.index(),
+        icon: Folder,
     },
 ];
 
